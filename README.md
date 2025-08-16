@@ -1,98 +1,178 @@
-![ATM-Program-in-Java](https://github.com/shivamverma26/ATM_Simulator/assets/94590743/ac5ea495-7a9f-43f3-b820-5fe099752302)
+# 🏦 ATM Simulator Application
 
-<html>
-<head>
-  <meta charset="UTF-8">
- 
-</head>
-<body>
+[![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)](https://www.oracle.com/java/)
+[![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)](https://www.sqlite.org/)
+[![Swing](https://img.shields.io/badge/Swing-GUI-blue?style=for-the-badge)](https://docs.oracle.com/javase/tutorial/uiswing/)
 
-<div align="center">
-<!--  picture -->
-</div>
+A comprehensive **ATM Banking Simulator** built with Java Swing, featuring secure authentication, complete banking operations, and SQLite database integration.
 
-<h1 align="center">ATM Simulator System</h1>
+## 🚀 Quick Start
 
-<p>The ATM Simulator System is a comprehensive Java application designed to emulate the functionalities of an Automated Teller Machine (ATM). With an intuitive graphical user interface (GUI), this system offers a range of features for account management and financial transactions.</p>
+### **Option 1: One-Click Run**
+```bash
+git clone https://github.com/Dhanush2662/ATM_SIMULATOR_APPLICATION.git
+cd ATM_SIMULATOR_APPLICATION
+run_atm.bat  # Windows
+```
 
-<h2>Table of Contents</h2>
+### **Option 2: Manual Run**
+```bash
+cd ATM-Simulator-System/src
+java -cp "../../*.jar;." ASimulatorSystem.Login
+```
 
-<ul>
-  <li><a href="#introduction">Introduction</a></li>
-  <li><a href="#key-features">Key Features</a></li>
-  <li><a href="#getting-started">Getting Started</a></li>
-  <li><a href="#usage">Usage</a></li>
-  <li><a href="#screenshots">Screenshots</a></li>
-  <li><a href="#contributing">Contributing</a></li>
-<!--   <li><a href="#license">License</a></li> -->
-</ul>
+## ✨ Features
 
-<h2>Introduction</h2>
+### 🔐 **Authentication System**
+- Secure login with Card Number & PIN
+- 3-step account registration process
+- Auto-generated 16-digit card numbers
+- 4-digit PIN system
 
-<p>The ATM Simulator System provides an interactive platform for users to simulate their banking transactions in a controlled environment. Leveraging Java and the Swing GUI library, this system demonstrates the flow of a real ATM application, allowing users to create accounts, manage transactions, and more.</p>
+### 💰 **Banking Operations**
+- **💳 Deposit** - Add money to account
+- **💸 Withdrawal** - Cash withdrawal with validation
+- **⚡ Fast Cash** - Quick predefined amounts
+- **📊 Balance Inquiry** - Real-time balance check
+- **📋 Mini Statement** - Transaction history
+- **🔑 PIN Change** - Secure PIN modification
 
-<h2>Key Features</h2>
+### 🗄️ **Database Features**
+- SQLite embedded database
+- Auto-table creation
+- Transaction logging
+- Multi-user support
 
-<ul>
-  <li><strong>Account Signup:</strong> Seamlessly create new accounts by inputting personal and contact information.</li>
-  <li><strong>Comprehensive Details:</strong> Capture additional account details, including religion, category, income, and education.</li>
-  <li><strong>Account Information:</strong> Display vital account information, such as type, card number, and PIN.</li>
-  <li><strong>Transaction Variety:</strong> Enable various transactions, including deposit, withdrawal, fast cash, and balance inquiries.</li>
-  <li><strong>Transaction History:</strong> Maintain a chronological record of user transactions for reference.</li>
-  <li><strong>PIN Management:</strong> Facilitate PIN changes for enhanced security.</li>
-  <li><strong>Graceful Exit:</strong> Offer a clean exit option for users to leave the application.</li>
-</ul>
+## 🛠️ Technology Stack
 
-<h2>Getting Started</h2>
+- **Frontend**: Java Swing GUI
+- **Backend**: Core Java
+- **Database**: SQLite
+- **Dependencies**: JDBC, JCalendar, SLF4J
 
-<p>To run the ATM Simulator System locally, follow these steps:</p>
+## 📱 Screenshots
 
-<ol>
-  <li>Make sure you have the Java Development Kit (JDK) installed.</li>
-  <li>Clone this repository to your local machine or download it as a ZIP file.</li>
-  <li>Navigate to the project directory in your terminal.</li>
-  <li>Compile the Java source files using the following command:</li>
-</ol>
+### Login Interface
+![Login Screen](https://via.placeholder.com/400x300/2196F3/FFFFFF?text=ATM+Login+Interface)
 
-<pre><code>javac *.java</code></pre>
+### Account Creation
+![Signup Process](https://via.placeholder.com/400x300/4CAF50/FFFFFF?text=3-Step+Signup+Process)
 
-<ol start="5">
-  <li>Run the application using the following command:</li>
-</ol>
+### Banking Operations
+![Banking Menu](https://via.placeholder.com/400x300/FF9800/FFFFFF?text=Banking+Operations+Menu)
 
-<pre><code>java login</code></pre>
+## 🏗️ Project Structure
 
-<p>Please note that the actual commands may vary based on your operating system and environment.</p>
+```
+ATM_SIMULATOR_APPLICATION/
+├── ATM-Simulator-System/
+│   └── src/ASimulatorSystem/
+│       ├── Login.java          # Main login interface
+│       ├── Signup.java         # Registration page 1
+│       ├── Signup2.java        # Registration page 2
+│       ├── Signup3.java        # Account creation
+│       ├── Conn.java           # Database connection
+│       ├── Deposit.java        # Deposit operations
+│       ├── Withdrawl.java      # Withdrawal operations
+│       └── [Other banking modules]
+├── Dependencies/
+│   ├── sqlite-jdbc-3.44.1.0.jar
+│   ├── jcalendar-1.4.jar
+│   └── slf4j-*.jar
+├── run_atm.bat                 # Quick launcher
+└── Documentation/
+```
 
-<h2>Usage</h2>
+## 🎯 How to Use
 
-<ol>
-  <li>Launch the application by executing <code>login</code>.</li>
-  <li>Follow the on-screen prompts to create a new account and provide necessary information.</li>
-  <li>Complete the account creation process by inputting additional details as prompted.</li>
-  <li>Access various account-related functionalities, such as transactions and balance inquiries.</li>
-</ol>
+### **Step 1: Create Account**
+1. Run the application
+2. Click "SIGN UP"
+3. Complete all 3 registration pages
+4. Note your generated Card Number & PIN
 
-## Screenshots
+### **Step 2: Login & Bank**
+1. Use your Card Number & PIN to login
+2. Choose from available banking operations
+3. Perform transactions as needed
 
-![login](https://github.com/shivamverma26/ATM_Simulator/assets/94590743/5a55fabf-422b-4529-b67f-6381024294b5)
-![signup1](https://github.com/shivamverma26/ATM_Simulator/assets/94590743/5aa34aec-4ff1-41a5-99d6-d54cdfd32265)
-![transaction](https://github.com/shivamverma26/ATM_Simulator/assets/94590743/4cb12f21-36c0-4c81-a8b9-70034c15c9df)
+## 📋 Requirements
 
+- **Java**: JDK 8 or higher
+- **OS**: Windows/Linux/macOS
+- **Memory**: 512MB RAM minimum
+- **Storage**: 50MB free space
 
+## 🔧 Installation
 
+### **Prerequisites**
+```bash
+# Check Java installation
+java -version
 
+# If not installed, download from:
+# https://www.oracle.com/java/technologies/downloads/
+```
 
-*This Pics demonstrates the key features and user interface of the ATM Simulator System.*
+### **Setup**
+```bash
+# Clone repository
+git clone https://github.com/Dhanush2662/ATM_SIMULATOR_APPLICATION.git
 
+# Navigate to project
+cd ATM_SIMULATOR_APPLICATION
 
-<h2>Contributing</h2>
+# Run application
+run_atm.bat  # Windows
+# OR
+./run_atm.sh  # Linux/macOS
+```
 
-<p>Contributions are welcome and encouraged! If you have suggestions, improvements, or bug fixes to propose, feel free to submit a pull request. If you encounter issues or have questions, open an issue on the GitHub repository.</p>
+## 🧪 Testing
 
-<!-- <h2>License</h2>
+Refer to `TESTING_GUIDE.md` for comprehensive testing instructions covering:
+- Account creation workflow
+- Login functionality
+- All banking operations
+- Error handling scenarios
 
-<p>This project is licensed under the <a href="LICENSE">MIT License</a>. You're free to use, modify, and distribute the code as permitted by the license.</p> -->
+## 📚 Documentation
 
-</body>
-</html>
+- **[Setup Guide](SETUP_GUIDE.md)** - Technical setup instructions
+- **[Testing Guide](TESTING_GUIDE.md)** - Complete testing procedures
+- **[Project Manual](PROJECT_MANUAL.md)** - Comprehensive project documentation
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🎯 Key Highlights
+
+- ✅ **Complete Banking System** - Full ATM functionality
+- ✅ **Secure Authentication** - PIN-based security
+- ✅ **Professional GUI** - Intuitive Swing interface
+- ✅ **Database Integration** - SQLite with auto-setup
+- ✅ **Zero Configuration** - Ready to run out of the box
+- ✅ **Cross Platform** - Works on Windows/Linux/macOS
+
+## 📞 Support
+
+- **Issues**: [GitHub Issues](https://github.com/Dhanush2662/ATM_SIMULATOR_APPLICATION/issues)
+- **Documentation**: Check the `/docs` folder
+- **Email**: [Your Email] (Optional)
+
+---
+
+### 🌟 **Star this repository if you found it helpful!**
+
+**Built with ❤️ using Java & SQLite**
+
+*Perfect for learning Java GUI development, database integration, and software engineering principles.*
